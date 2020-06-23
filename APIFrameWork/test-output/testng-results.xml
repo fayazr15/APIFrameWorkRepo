@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2283" started-at="2020-06-23T05:52:32Z" finished-at="2020-06-23T05:52:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2283" started-at="2020-06-23T05:52:32Z" finished-at="2020-06-23T05:52:34Z">
+      <class name="co.api.testscripts.AddBulkDataByFrameWork">
+        <test-method status="PASS" signature="checkBulkDataByFW()[pri:0, instance:co.api.testscripts.AddBulkDataByFrameWork@475530b9]" name="checkBulkDataByFW" duration-ms="2267" started-at="2020-06-23T05:52:32Z" finished-at="2020-06-23T05:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBulkDataByFW -->
+      </class> <!-- co.api.testscripts.AddBulkDataByFrameWork -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
