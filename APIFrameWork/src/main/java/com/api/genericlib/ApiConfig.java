@@ -1,16 +1,17 @@
 package com.api.genericlib;
 
+import static io.restassured.RestAssured.given;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
 import org.apache.commons.io.IOUtils;
 import org.json.simple.JSONObject;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
-import static io.restassured.RestAssured.*;
 
 public class ApiConfig
 {
@@ -28,11 +29,11 @@ public class ApiConfig
 	
 	public Response executeRequest(String apiData)
 	{
-		Response resp=null;
+		Response resp = null;
 		String[] apiDataArray = apiData.split(";");
 		if (apiDataArray[0].equals("get")) 
 		{
-			resp =given()
+			resp = given()
 //			.queryParam("id", 2)
 			.when()
 			.get(apiDataArray[1]);
@@ -40,7 +41,7 @@ public class ApiConfig
 		}else if (apiDataArray[0].equals("post")) 
 		{
 			String jsonobj = createJsonObject(apiDataArray[2]);
-			resp =given()
+			resp = given()
 			.body(jsonobj)
 			.contentType(ContentType.JSON)
 			.when()
@@ -49,7 +50,7 @@ public class ApiConfig
 		}else if (apiDataArray[0].equals("put")) 
 		{
 			String jsonobj = createJsonObject(apiDataArray[2]);
-			resp =given()
+			resp = given()
 			.body(jsonobj)
 			.contentType(ContentType.JSON)
 			.when()
@@ -58,7 +59,7 @@ public class ApiConfig
 		else if (apiDataArray[0].equals("patch")) 
 		{
 			String jsonobj = createJsonObject(apiDataArray[2]);
-			resp =given()
+			resp = given()
 			.body(jsonobj)
 			.contentType(ContentType.JSON)
 			.when()
@@ -67,7 +68,7 @@ public class ApiConfig
 		}
 		else if (apiDataArray[0].equals("delete")) 
 		{
-			resp =given()
+			resp = given()
 			.when()
 			.delete(apiDataArray[1]);
 		}
