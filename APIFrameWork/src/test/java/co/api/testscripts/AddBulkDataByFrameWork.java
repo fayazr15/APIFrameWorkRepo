@@ -14,6 +14,5 @@ public class AddBulkDataByFrameWork extends BaseClass
 		rutil.ValidateStatusCode(resp, 201);
 		rutil.ValidateContentType(resp);
 		resp.then().log().all();
-		System.out.println("Test Pass");
 	}
 }

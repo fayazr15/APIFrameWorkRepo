@@ -12,7 +12,7 @@ public class BaseClass
 	
 //	Here we comment bcoz we are dealing with ,Multiple domain URI's
 	
-	/*@BeforeSuite
+/*	@BeforeSuite
 	public void congigBS()
 	{
 		baseURI ="https://restcountries.eu/";
