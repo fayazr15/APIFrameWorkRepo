@@ -16,5 +16,6 @@ public class CreateNewResourceTest extends BaseClass
 		String apiTestData = config.getApiTestData("createNewData");
 		Response resp = config.executeRequest(apiTestData);
 		resp.then().log().all();
+		System.out.println("pass");
 	}
 }
