@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.*;
 public class BaseClass 
 {
 
-	public ApiConfig config = new ApiConfig();
+	public  ApiConfig config = new ApiConfig();
 	public RestAssuredCommonUtils rutil = new RestAssuredCommonUtils();
 	
 //	Here we comment bcoz we are dealing with ,Multiple domain URI's
