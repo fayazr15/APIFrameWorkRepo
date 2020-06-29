@@ -10,7 +10,7 @@ import java.sql.Statement;
 import org.testng.annotations.Test;
 
 import com.api.genericlib.BaseClass;
-import com.mysql.jdbc.Driver;
+import com.mysql.cj.jdbc.Driver;
 
 public class FetchTheDataFromDB2 extends BaseClass
 
