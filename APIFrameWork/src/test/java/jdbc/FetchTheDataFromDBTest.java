@@ -12,7 +12,7 @@ import com.mysql.cj.jdbc.Driver;
 
 
 
-public class FetchTheDataFromDB 
+public class FetchTheDataFromDBTest 
 
 {
 

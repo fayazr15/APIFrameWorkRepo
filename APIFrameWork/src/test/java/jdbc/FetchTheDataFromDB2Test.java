@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import com.api.genericlib.BaseClass;
 import com.mysql.cj.jdbc.Driver;
 
-public class FetchTheDataFromDB2 extends BaseClass
+public class FetchTheDataFromDB2Test extends BaseClass
 
 {
 	@Test
